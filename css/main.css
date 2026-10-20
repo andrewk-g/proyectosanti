@@ -1,0 +1,365 @@
+/* ==========================================================================
+   EcoMarket — main.css
+   Reset, variables, tipografía y estilos globales.
+   Proyecto de demostración: HTML5 + CSS3, sin JavaScript.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Variables de diseño
+   -------------------------------------------------------------------------- */
+:root {
+  /* Paleta de marca */
+  --verde: #2ecc71;
+  --verde-oscuro: #27ae60;
+  --verde-profundo: #173f2b;
+  --beige: #f5f5dc;
+  --fondo: #faf9f4;
+  --blanco: #ffffff;
+  --texto: #26352b;
+  --texto-suave: #68756a;
+  --borde: #e4e8df;
+
+  /* Tintes derivados para superficies y estados */
+  --verde-tinte: #eaf7ef;
+  --verde-tinte-2: #dcefe3;
+  --beige-suave: #f1f0e2;
+  --beige-oscuro: #e9e7d5;
+  --rojo: #b4453c;
+  --rojo-tinte: #fbeeec;
+  --ambar: #c98a3c;
+
+  /* Tipografía */
+  --fuente-titulo: "Fraunces", "Iowan Old Style", "Palatino Linotype",
+    "Book Antiqua", Georgia, serif;
+  --fuente-texto: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Medidas y ritmo */
+  --ancho: 1240px;
+  --radio-xs: 8px;
+  --radio-sm: 12px;
+  --radio: 18px;
+  --radio-lg: 28px;
+  --radio-xl: 40px;
+  --radio-full: 999px;
+  --seccion: clamp(3.75rem, 8vw, 7rem);
+  --cabecera-alto: 5.2rem;
+
+  /* Sombras suaves y profundidad 3D */
+  --sombra-xs: 0 1px 2px rgba(23, 63, 43, 0.06);
+  --sombra-sm: 0 6px 18px rgba(23, 63, 43, 0.07);
+  --sombra-md: 0 14px 34px rgba(23, 63, 43, 0.1);
+  --sombra-lg: 0 26px 60px rgba(23, 63, 43, 0.14);
+  --sombra-3d: 0 22px 48px -12px rgba(23, 63, 43, 0.16),
+    0 8px 20px -6px rgba(39, 174, 96, 0.1);
+  --sombra-3d-hover: 0 32px 68px -12px rgba(23, 63, 43, 0.22),
+    0 14px 28px -8px rgba(39, 174, 96, 0.16);
+
+  /* Perspectiva y movimiento 3D */
+  --perspectiva-hero: 1400px;
+  --perspectiva-tarjeta: 1000px;
+  --transicion: 220ms cubic-bezier(0.33, 1, 0.68, 1);
+  --transicion-lenta: 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transicion-3d: 480ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset moderno y base
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--cabecera-alto) + 1.5rem);
+  overflow-x: clip;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: clip;
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente-texto);
+  font-size: 1rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* --------------------------------------------------------------------------
+   3. Tipografía
+   -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--verde-profundo);
+  font-family: var(--fuente-titulo);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.55rem, 6.4vw, 4.7rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4.4vw, 3.25rem);
+}
+
+h3 {
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+}
+
+h4 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.8125rem;
+}
+
+::selection {
+  background-color: var(--verde);
+  color: var(--verde-profundo);
+}
+
+/* --------------------------------------------------------------------------
+   4. Estructura global
+   -------------------------------------------------------------------------- */
+.contenedor {
+  width: min(100% - 2.5rem, var(--ancho));
+  margin-inline: auto;
+}
+
+@media (min-width: 48rem) {
+  .contenedor {
+    width: min(100% - 4rem, var(--ancho));
+  }
+}
+
+.seccion {
+  position: relative;
+  padding-block: var(--seccion);
+}
+
+.seccion--compacta {
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.seccion--beige {
+  background-color: var(--beige-suave);
+}
+
+.seccion--verde {
+  background-color: var(--verde-tinte);
+}
+
+/* --------------------------------------------------------------------------
+   5. Utilidades y accesibilidad
+   -------------------------------------------------------------------------- */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.saltar {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  padding: 0.75rem 1.15rem;
+  border-radius: var(--radio-full);
+  background-color: var(--verde-profundo);
+  color: var(--blanco);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transform: translateY(-160%);
+  transition: transform var(--transicion);
+}
+
+.saltar:focus-visible {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 3px solid var(--verde-oscuro);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   6. Patrones de texto reutilizables
+   -------------------------------------------------------------------------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.15rem;
+  color: var(--verde-oscuro);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 1.9rem;
+  height: 1px;
+  background-color: currentColor;
+  content: "";
+}
+
+.eyebrow--claro {
+  color: var(--verde);
+}
+
+.eyebrow--claro::before {
+  background-color: currentColor;
+}
+
+.lead {
+  max-width: 46ch;
+  color: var(--texto-suave);
+  font-size: clamp(1.03rem, 1.5vw, 1.18rem);
+  line-height: 1.75;
+}
+
+.nota {
+  color: var(--texto-suave);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.nota a {
+  color: var(--verde-oscuro);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.enlace-flecha {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--verde-profundo);
+  font-size: 0.94rem;
+  font-weight: 700;
+  transition: color var(--transicion);
+}
+
+.enlace-flecha span {
+  transition: transform var(--transicion);
+}
+
+.enlace-flecha:hover {
+  color: var(--verde-oscuro);
+}
+
+.enlace-flecha:hover span {
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   7. Preferencias del sistema
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

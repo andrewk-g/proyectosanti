@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio | EcoMarket</title>
+    <meta
+      name="description"
+      content="EcoMarket: tienda en línea de productos ecológicos, reutilizables y sostenibles para un consumo consciente."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="icon" type="image/svg+xml" href="img/icons/ecomarket-icon.svg" />
+    <link rel="alternate icon" href="img/icons/ecomarket-icon.svg" />
+  </head>
+  <body>
+    <a href="#contenido" class="saltar">Saltar al contenido</a>
+    <header class="cabecera">
+      <div class="cabecera__contenedor">
+        <a class="brand" href="index.html" aria-label="EcoMarket, ir al inicio">
+          <img class="brand__logo" src="img/logo.png" alt="EcoMarket" />
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-boton">
+          <span class="menu-boton__lineas">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Menú</span>
+        </label>
+        <nav class="navegacion" aria-label="Navegación principal">
+          <ul class="navegacion__lista">
+            <li>
+              <a href="index.html" class="navegacion__enlace" aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a href="views/productos.html" class="navegacion__enlace">Productos</a>
+            </li>
+            <li>
+              <a href="views/sobre-nosotros.html" class="navegacion__enlace">Nosotros</a>
+            </li>
+            <li>
+              <a href="views/contacto.html" class="navegacion__enlace">Contacto</a>
+            </li>
+          </ul>
+          <div class="navegacion__acciones">
+            <a href="#destacados" class="accion-visual" aria-label="Ir a productos destacados">
+              <span>Búsqueda</span>
+            </a>
+            <a href="#destacados" class="accion-visual" aria-label="Ver carrito de compras">
+              <span>Carrito</span>
+              <span class="accion-visual__punto">0</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="hero">
+        <div class="hero__ambiente" aria-hidden="true">
+          <span class="hero__orbe hero__orbe--uno"></span>
+          <span class="hero__orbe hero__orbe--dos"></span>
+          <span class="hoja-3d hoja-3d--tres">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path
+                d="M54 10C32 10 14 24 12 48c24-2 38-20 42-38Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 48C26 36 38 24 52 12"
+                stroke="#faf9f4"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="contenedor hero__contenedor">
+          <div class="hero__contenido parallax-hero-text">
+            <span class="eyebrow">Tienda ecológica profesional</span>
+            <h1>Pequeños cambios, un planeta más verde.</h1>
+            <p class="lead">
+              Descubre productos sostenibles, reutilizables y responsables que cuidan
+              de ti y del mundo que compartimos.
+            </p>
+            <div class="hero__acciones">
+              <a href="views/productos.html" class="btn btn--primario">
+                Explorar productos
+              </a>
+              <a href="views/sobre-nosotros.html" class="btn btn--secundario">
+                Conoce nuestra historia
+              </a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <div class="hero__capa-fondo parallax-hero-bg" aria-hidden="true"></div>
+            <span class="hoja-3d hoja-3d--uno" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <path
+                  d="M54 10C30 10 12 26 10 52c26-2 42-20 44-42Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M11 51C25 38 39 25 52 12"
+                  stroke="#faf9f4"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="hoja-3d hoja-3d--dos" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <path
+                  d="M12 12c24 0 40 16 42 40C28 50 14 34 12 12Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M52 50C38 38 25 25 14 14"
+                  stroke="#faf9f4"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <div class="hero__insignia-3d hero__insignia-3d--superior" aria-hidden="true">
+              <span class="hero__insignia-icono">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20 4C11 4 5 10 4 20c10-1 16-7 16-16Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4 20L15 9"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span>Diseño natural y duradero</span>
+            </div>
+            <div class="hero__marco parallax-hero-media">
+              <img
+                src="img/hero/hero-manos.jpg"
+                alt="Manos sosteniendo productos reutilizables en un entorno natural"
+                loading="eager"
+              />
+            </div>
+            <div class="hero__insignia-3d hero__insignia-3d--inferior" aria-hidden="true">
+              <span class="hero__insignia-icono">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="m8.5 12.5 2.5 2.5 4.5-5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Alternativas sin plástico</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separador-organico" aria-hidden="true">
+        <span class="separador-organico__hoja">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M19 5C11 5 6 10 5 19c9-1 14-6 14-14Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <section class="seccion scroll-reveal">
+        <div class="contenedor">
+          <div class="encabezado-seccion scroll-title">
+            <div>
+              <span class="eyebrow">Beneficios</span>
+              <h2>Por qué elegir EcoMarket</h2>
+              <p class="lead">
+                Cada producto está pensado para reducir residuos, prolongar su vida
+                útil y facilitar hábitos de consumo más conscientes.
+              </p>
+            </div>
+          </div>
+          <ul class="malla-beneficios">
+            <li class="tarjeta-beneficio scroll-card">
+              <span class="tarjeta-beneficio__icono">
+                <img
+                  src="img/icons/sostenible}.svg"
+                  alt="Icono de productos sostenibles"
+                />
+              </span>
+              <h3>Productos sostenibles</h3>
+              <p>
+                Selección de objetos pensados para durar, con menor impacto
+                ambiental.
+              </p>
+            </li>
+            <li class="tarjeta-beneficio scroll-card">
+              <span class="tarjeta-beneficio__icono">
+                <img
+                  src="img/icons/materiales.svg"
+                  alt="Icono de materiales responsables"
+                />
+              </span>
+              <h3>Materiales responsables</h3>
+              <p>
+                Madera, acero, bambú, fibra de coco, algodón orgánico y otras
+                alternativas viables.
+              </p>
+            </li>
+            <li class="tarjeta-beneficio scroll-card">
+              <span class="tarjeta-beneficio__icono">
+                <img
+                  src="img/icons/menos residuos.svg"
+                  alt="Icono de menos residuos"
+                />
+              </span>
+              <h3>Menos residuos, más futuro</h3>
+              <p>
+                Alternativas al desechable que ayudan a reducir la generación de
+                residuos.
+              </p>
+            </li>
+            <li class="tarjeta-beneficio scroll-card">
+              <span class="tarjeta-beneficio__icono">
+                <img
+                  src="img/icons/consumocomsiente.svg"
+                  alt="Icono de consumo consciente"
+                />
+              </span>
+              <h3>Consumo consciente</h3>
+              <p>
+                Comprar con intención: calidad, utilidad real y menor volumen de
+                desechos.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="seccion seccion--suave" id="destacados">
+        <div class="contenedor">
+          <div class="encabezado-seccion encabezado-seccion--entre scroll-title">
+            <div>
+              <span class="eyebrow">Productos destacados</span>
+              <h2>Seis para empezar</h2>
+              <p class="lead">
+                Lo más elegido para dar el primer paso hacia una casa más
+                sostenible.
+              </p>
+            </div>
+            <a href="views/productos.html" class="enlace-flecha">
+              Ver todo el catálogo <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <ul class="malla-destacados">
+            <li class="tarjeta-producto scroll-card">
+              <div class="tarjeta-producto__media">
+                <img
+                  class="scroll-image-product"
+                  src="img/products/botella-ecologica.webp"
+                  alt="Botella de acero inoxidable 750 ml"
+                  loading="lazy"
+                />
+                <span class="etiqueta etiqueta--eco">Reutilizable</span>
+              </div>
+              <div class="tarjeta-producto__contenido">
+                <div class="tarjeta-producto__cabecera">
+                  <h3>Botella de acero 750 ml</h3>
+                  <p class="precio">$ 68.900 COP</p>
+                </div>
+                <p>Conserva frío 24 h y caliente 12 h. Sin plástico de un solo uso.</p>
+                <a href="views/productos.html" class="btn btn--terciario"
+                  >Ver producto</a
+                >
+              </div>
+            </li>
+            <li class="tarjeta-producto scroll-card">
+              <div class="tarjeta-producto__media">
+                <img
+                  class="scroll-image-product"
+                  src="img/products/camiseta-estampada-algodon.webp"
+                  alt="Camiseta de algodón orgánico"
+                  loading="lazy"
+                />
+                <span class="etiqueta etiqueta--eco">Algodón orgánico</span>
+              </div>
+              <div class="tarjeta-producto__contenido">
+                <div class="tarjeta-producto__cabecera">
+                  <h3>Camiseta de algodón orgánico</h3>
+                  <p class="precio">$ 59.900 COP</p>
+                </div>
+                <p>Suave, transpirable y producida con menor consumo de agua.</p>
+                <a href="views/productos.html" class="btn btn--terciario"
+                  >Ver producto</a
+                >
+              </div>
+            </li>
+            <li class="tarjeta-producto scroll-card">
+              <div class="tarjeta-producto__media">
+                <img
+                  class="scroll-image-product"
+                  src="img/products/cepillobambu.jpg"
+                  alt="Cepillo dental de bambú"
+                  loading="lazy"
+                />
+                <span class="etiqueta etiqueta--eco">Biodegradable</span>
+              </div>
+              <div class="tarjeta-producto__contenido">
+                <div class="tarjeta-producto__cabecera">
+                  <h3>Cepillo de bambú</h3>
+                  <p class="precio">$ 7.900 COP</p>
+                </div>
+                <p>Mango compostable, cerdas suaves y alternativa al plástico.</p>
+                <a href="views/productos.html" class="btn btn--terciario"
+                  >Ver producto</a
+                >
+              </div>
+            </li>
+            <li class="tarjeta-producto scroll-card">
+              <div class="tarjeta-producto__media">
+                <img
+                  class="scroll-image-product"
+                  src="img/products/bolsa-mallas.jpg"
+                  alt="Bolsa de red lavable"
+                  loading="lazy"
+                />
+                <span class="etiqueta etiqueta--eco">Sin bolsas plásticas</span>
+              </div>
+              <div class="tarjeta-producto__contenido">
+                <div class="tarjeta-producto__cabecera">
+                  <h3>Bolsa de red lavable</h3>
+                  <p class="precio">$ 18.900 COP</p>
+                </div>
+                <p>Ideal para frutas y verduras. Ligera, resistente y reutilizable.</p>
+                <a href="views/productos.html" class="btn btn--terciario"
+                  >Ver producto</a
+                >
+              </div>
+            </li>
+            <li class="tarjeta-producto scroll-card">
+              <div class="tarjeta-producto__media">
+                <img
+                  class="scroll-image-product"
+                  src="img/products/maceta.webp"
+                  alt="Maceta de fibra de coco"
+                  loading="lazy"
+                />
+                <span class="etiqueta etiqueta--eco">Biodegradable</span>
+              </div>
+              <div class="tarjeta-producto__contenido">
+                <div class="tarjeta-producto__cabecera">
+                  <h3>Maceta de fibra de coco</h3>
+                  <p class="precio">$ 24.900 COP</p>
+                </div>
+                <p>Permite trasplante directo y se integra al suelo al finalizar.</p>
+                <a href="views/productos.html" class="btn btn--terciario"
+                  >Ver producto</a
+                >
+              </div>
+            </li>
+            <li class="tarjeta-producto scroll-card">
+              <div class="tarjeta-producto__media">
+                <img
+                  class="scroll-image-product"
+                  src="img/products/bolsacafe.jpg"
+                  alt="Café de origen tostado"
+                  loading="lazy"
+                />
+                <span class="etiqueta etiqueta--eco">Origen responsable</span>
+              </div>
+              <div class="tarjeta-producto__contenido">
+                <div class="tarjeta-producto__cabecera">
+                  <h3>Café de origen 250 g</h3>
+                  <p class="precio">$ 32.000 COP</p>
+                </div>
+                <p>Tostión media, grano seleccionado. Comercio de pequeña escala.</p>
+                <a href="views/productos.html" class="btn btn--terciario"
+                  >Ver producto</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="separador-organico" aria-hidden="true">
+        <span class="separador-organico__hoja">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M19 5C11 5 6 10 5 19c9-1 14-6 14-14Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <section class="seccion">
+        <div class="contenedor">
+          <div class="bloque-sostenible scroll-section">
+            <div class="bloque-sostenible__contenido scroll-reveal">
+              <span class="eyebrow">Elección consciente</span>
+              <h2>Vivir sostenible empieza con una elección.</h2>
+              <p class="lead">
+                En EcoMarket facilitamos el acceso a productos reutilizables y
+                sostenibles para que adoptar nuevos hábitos sea más sencillo,
+                práctico y duradero.
+              </p>
+              <div class="hero__acciones">
+                <a href="views/sobre-nosotros.html" class="btn btn--primario">
+                  Conoce la historia de EcoMarket
+                </a>
+                <a href="views/productos.html" class="btn btn--secundario">
+                  Ir al catálogo
+                </a>
+              </div>
+            </div>
+            <div class="bloque-sostenible__media">
+              <div class="hero__capa-fondo" aria-hidden="true"></div>
+              <span class="hoja-3d hoja-3d--dos" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path
+                    d="M54 10C30 10 12 26 10 52c26-2 42-20 44-42Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M11 51C25 38 39 25 52 12"
+                    stroke="#faf9f4"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <div class="bloque-sostenible__marco">
+                <img
+                  class="scroll-image"
+                  src="img/hero/materiales-jabones.jpg"
+                  alt="Jabones sólidos, esponjas naturales y productos de cuidado personal ecológicos"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor pie__contenedor">
+        <div class="pie__superior">
+          <div class="pie__marca">
+            <a class="brand brand--footer" href="index.html" aria-label="EcoMarket, ir al inicio">
+              <img class="brand__logo brand__logo--footer" src="img/logo.png" alt="EcoMarket" />
+            </a>
+            <p class="pie__texto">
+              Productos para una casa que pesa menos sobre el planeta. Proyecto
+              demostrativo y académico.
+            </p>
+          </div>
+          <div class="pie__bloque">
+            <h3 class="pie__titulo">Navegación</h3>
+            <ul class="pie__lista">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="views/productos.html">Productos</a></li>
+              <li><a href="views/sobre-nosotros.html">Nosotros</a></li>
+              <li><a href="views/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="pie__bloque">
+            <h3 class="pie__titulo">Contacto</h3>
+            <ul class="pie__lista">
+              <li>Correo: camilocespedes@ecomarket.co</li>
+              <li>Teléfono: +57 329 393 9392</li>
+              <li>Ubicación: Bucaramanga, Colombia</li>
+            </ul>
+          </div>
+          <div class="pie__bloque">
+            <h3 class="pie__titulo">Síguenos</h3>
+            <p class="pie__texto">
+              Enlaces visuales sin integración a redes reales.
+            </p>
+            <ul class="pie__redes">
+              <li>
+                <a
+                  class="pie__red"
+                  href="https://www.instagram.com/?hl=es"
+                  aria-label="Instagram (enlace demostrativo)"
+                  >IG</a
+                >
+              </li>
+              <li>
+                <a
+                  class="pie__red"
+                  href="https://www.facebook.com/?locale=es_LA"
+                  aria-label="Facebook (enlace demostrativo)"
+                  >FB</a
+                >
+              </li>
+              <li>
+                <a
+                  class="pie__red"
+                  href="https://x.com/?lang=es"
+                  aria-label="X (enlace demostrativo)"
+                  >X</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pie__inferior">
+          <small>© 2026 EcoMarket. Todos los derechos reservados.</small>
+          <div class="pie__legal">
+            <a href="#">Términos y condiciones </a>
+            <a href="#">Política de privacidad </a>
+            <a href="#">Envíos y devoluciones </a>
+          </div>
+          <p class="nota">
+            Los productos, precios, testimonios y datos comerciales son
+            únicamente de demostración.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

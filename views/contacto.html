@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | EcoMarket</title>
+    <meta
+      name="description"
+      content="Contacto de EcoMarket. Formulario de demostración sin envío real."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="icon" type="image/svg+xml" href="../img/icons/ecomarket-icon.svg" />
+    <link rel="alternate icon" href="../img/icons/ecomarket-icon.svg" />
+  </head>
+  <body>
+    <a href="#contacto" class="saltar">Saltar al contenido</a>
+    <header class="cabecera">
+      <div class="cabecera__contenedor">
+        <a class="brand" href="../index.html" aria-label="EcoMarket, ir al inicio">
+          <img class="brand__logo" src="../img/logo.png" alt="EcoMarket" />
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-boton">
+          <span class="menu-boton__lineas">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Menú</span>
+        </label>
+        <nav class="navegacion" aria-label="Navegación principal">
+          <ul class="navegacion__lista">
+            <li>
+              <a href="../index.html" class="navegacion__enlace">Inicio</a>
+            </li>
+            <li>
+              <a href="productos.html" class="navegacion__enlace">Productos</a>
+            </li>
+            <li>
+              <a href="sobre-nosotros.html" class="navegacion__enlace">Nosotros</a>
+            </li>
+            <li>
+              <a href="contacto.html" class="navegacion__enlace" aria-current="page"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <div class="navegacion__acciones">
+            <a href="productos.html" class="accion-visual">
+              <span>Ir al catálogo</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="contacto">
+      <section class="seccion">
+        <div class="hero__ambiente" aria-hidden="true">
+          <span class="hero__orbe hero__orbe--uno"></span>
+          <span class="hero__orbe hero__orbe--dos"></span>
+          <span class="hoja-3d hoja-3d--tres">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path
+                d="M54 10C32 10 14 24 12 48c24-2 38-20 42-38Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 48C26 36 38 24 52 12"
+                stroke="#faf9f4"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="contenedor">
+          <div class="encabezado-seccion hero__contenido">
+            <div>
+              <span class="eyebrow">Contacto</span>
+              <h1>Hablemos de un futuro más sostenible.</h1>
+              <p class="lead">
+                ¿Tienes preguntas, sugerencias o quieres conocer más sobre nuestros
+                productos? Estamos aquí para escucharte.
+              </p>
+            </div>
+          </div>
+          <div class="distribucion-contacto">
+            <div class="tarjeta-info">
+              <div>
+                <span class="eyebrow">Formulario</span>
+                <h2>Envíanos un mensaje</h2>
+                <p class="texto-suave">
+                  Sin backend o servicio externo compatible, el formulario no
+                  puede enviar mensajes reales. No se muestra una confirmación
+                  falsa de envío.
+                </p>
+              </div>
+              <form class="formulario" action="#" method="get" novalidate>
+                <div class="campo">
+                  <label class="campo__etiqueta" for="nombre">Nombre completo</label>
+                  <input
+                    class="campo__entrada"
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    required
+                    minlength="2"
+                    placeholder="Ej. Camila González"
+                    autocomplete="name"
+                  />
+                  <span class="campo__ayuda">Mínimo 2 caracteres.</span>
+                  <span class="campo__error">Ingresa un nombre válido.</span>
+                </div>
+                <div class="campo">
+                  <label class="campo__etiqueta" for="correo">Correo electrónico</label>
+                  <input
+                    class="campo__entrada"
+                    id="correo"
+                    name="correo"
+                    type="email"
+                    required
+                    placeholder="ejemplo@correo.com"
+                    autocomplete="email"
+                  />
+                  <span class="campo__ayuda">Usa un formato de correo válido.</span>
+                  <span class="campo__error">Ingresa un correo electrónico válido.</span>
+                </div>
+                <div class="campo">
+                  <label class="campo__etiqueta" for="asunto">Asunto</label>
+                  <input
+                    class="campo__entrada"
+                    id="asunto"
+                    name="asunto"
+                    type="text"
+                    required
+                    minlength="3"
+                    placeholder="Consulta sobre productos"
+                  />
+                  <span class="campo__ayuda">Mínimo 3 caracteres.</span>
+                  <span class="campo__error">Ingresa un asunto válido.</span>
+                </div>
+                <div class="campo">
+                  <label class="campo__etiqueta" for="mensaje">Mensaje</label>
+                  <textarea
+                    class="campo__texto"
+                    id="mensaje"
+                    name="mensaje"
+                    required
+                    minlength="10"
+                    placeholder="Escribe tu mensaje aquí..."
+                  ></textarea>
+                  <span class="campo__ayuda">Mínimo 10 caracteres.</span>
+                  <span class="campo__error">Ingresa un mensaje válido.</span>
+                </div>
+                <div class="condiciones">
+                  <input id="privacidad" name="privacidad" type="checkbox" required />
+                  <label class="condiciones__texto" for="privacidad">
+                    Acepto la
+                    <a class="condiciones__enlace" href="#"
+                      >política de privacidad (demostrativa)</a
+                    >
+                  </label>
+                </div>
+                <button class="btn btn--primario" type="submit">
+                  Enviar mensaje (demostrativo)
+                </button>
+                <p class="nota">
+                  El envío no es funcional. Se utiliza validación HTML nativa y
+                  estilos CSS para estados :valid, :invalid y :focus.
+                </p>
+              </form>
+            </div>
+            <div style="display: grid; gap: 1.6rem">
+              <article class="tarjeta-info scroll-card">
+                <span class="eyebrow">Información complementaria</span>
+                <h3>Datos de demostración</h3>
+                <ul class="tarjeta-info__lista">
+                  <li><strong>Correo:</strong> hola@ecomarket.co</li>
+                  <li><strong>Horario de atención:</strong> Lunes a viernes, 9:00 - 17:00 (demostrativo)</li>
+                  <li><strong>Ubicación:</strong> Bogotá, Colombia (demostrativa)</li>
+                </ul>
+              </article>
+              <article class="tarjeta-info scroll-card">
+                <span class="eyebrow">Redes sociales</span>
+                <h3>Conecta con nosotros</h3>
+                <p class="texto-suave">
+                  Enlaces visuales con efecto de escala al pasar el cursor.
+                </p>
+                <ul class="pie__redes">
+                  <li>
+                    <a class="pie__red" href="https://www.instagram.com/?hl=es" aria-label="Instagram">IG</a>
+                  </li>
+                  <li>
+                    <a class="pie__red" href="https://www.facebook.com/?locale=es_LA" aria-label="Facebook">FB</a>
+                  </li>
+                  <li>
+                    <a class="pie__red" href="https://x.com/?lang=es" aria-label="X">X</a>
+                  </li>
+                </ul>
+              </article>
+              <article class="tarjeta-info scroll-card">
+                <span class="eyebrow">Ubicación</span>
+                <h3>Mapa ilustrado</h3>
+                <div class="mapa-ilustrado">
+                  <img class="scroll-image" src="../img/hero/mapa.svg" alt="Ilustración estática de un mapa de ubicación" loading="lazy" />
+                </div>
+                <p class="nota">Mapa estático e ilustrado. No interactivo.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor pie__contenedor">
+        <div class="pie__superior">
+          <div class="pie__marca">
+            <a class="brand brand--footer" href="../index.html" aria-label="EcoMarket, ir al inicio">
+              <img class="brand__logo brand__logo--footer" src="../img/logo.png" alt="EcoMarket" />
+            </a>
+            <p class="pie__texto">
+              Proyecto académico de tienda virtual ecológica. Datos demostrativos.
+            </p>
+          </div>
+          <div class="pie__bloque">
+            <h3 class="pie__titulo">Navegación</h3>
+            <ul class="pie__lista">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="sobre-nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="pie__bloque">
+            <h3 class="pie__titulo">Legal</h3>
+            <ul class="pie__lista">
+              <li><a href="#">Términos y condiciones (demostrativo)</a></li>
+              <li><a href="#">Política de privacidad (demostrativo)</a></li>
+              <li><a href="#">Envíos y devoluciones (demostrativo)</a></li>
+            </ul>
+          </div>
+          <div class="pie__bloque">
+            <h3 class="pie__titulo">Redes</h3>
+            <ul class="pie__redes">
+              <li><a class="pie__red" href="#" aria-label="Instagram">IG</a></li>
+              <li><a class="pie__red" href="#" aria-label="Facebook">FB</a></li>
+              <li><a class="pie__red" href="#" aria-label="X">X</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pie__inferior">
+          <small>© 2026 EcoMarket. Proyecto académico.</small>
+          <p class="nota">Productos, precios, testimonios y datos comerciales son demostrativos.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
