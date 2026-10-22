@@ -341,8 +341,7 @@
 
     /* D. Imágenes con profundidad durante el scroll (.scroll-image) */
     .scroll-image,
-    .bloque-sostenible__marco img,
-    .mapa-ilustrado img {
+    .bloque-sostenible__marco img {
       animation: depth-image-pan linear both;
       animation-timeline: view();
       animation-range: entry 0% exit 100%;

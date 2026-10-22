@@ -56,9 +56,17 @@
           </ul>
           <div class="navegacion__acciones">
             <a href="#destacados" class="accion-visual" aria-label="Ir a productos destacados">
+              <svg class="accion-visual__icono" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2.2" />
+                <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+              </svg>
               <span>Búsqueda</span>
             </a>
             <a href="#destacados" class="accion-visual" aria-label="Ver carrito de compras">
+              <svg class="accion-visual__icono" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                <path d="M3 6h18M16 10a4 4 0 0 1-8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
               <span>Carrito</span>
               <span class="accion-visual__punto">0</span>
             </a>
@@ -466,6 +474,104 @@
                   alt="Jabones sólidos, esponjas naturales y productos de cuidado personal ecológicos"
                   loading="lazy"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separador-organico" aria-hidden="true">
+        <span class="separador-organico__hoja">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M19 5C11 5 6 10 5 19c9-1 14-6 14-14Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <section class="seccion seccion--suave" id="ubicacion">
+        <div class="contenedor">
+          <div class="bloque-sostenible scroll-section">
+            <div class="bloque-sostenible__contenido scroll-reveal">
+              <span class="eyebrow">Punto EcoMarket</span>
+              <h2>Visítanos en Bucaramanga.</h2>
+              <p class="lead">
+                Acércate a nuestro punto demostrativo en el sector de Ciudadela Real
+                de Minas para conocer nuestras alternativas reutilizables y recibir
+                asesoría sobre consumo consciente.
+              </p>
+              <ul class="tarjeta-info__lista">
+                <li><strong>Dirección:</strong> Av. Búcaros · Ciudadela Real de Minas</li>
+                <li><strong>Referencia:</strong> A pocos metros de las UTS y Plaza Mayor</li>
+                <li><strong>Horario:</strong> Lunes a sábado, 9:00 a. m. – 6:00 p. m.</li>
+              </ul>
+              <div class="hero__acciones">
+                <a href="views/contacto.html" class="btn btn--primario">
+                  Cómo llegar y contacto
+                </a>
+              </div>
+            </div>
+            <div class="bloque-sostenible__media">
+              <div class="mapa-ilustrado" tabindex="0" aria-label="Mapa interactivo simulado de la ubicación de EcoMarket en Bucaramanga">
+                <input type="checkbox" id="mapa-zoom-inicio" class="mapa-zoom-toggle" aria-label="Alternar acercamiento del mapa" />
+
+                <div class="mapa-ilustrado__lienzo">
+                  <img
+                    class="mapa-ilustrado__img"
+                    src="img/mapa.png"
+                    alt="Vista satelital del sector Ciudadela Real de Minas en Bucaramanga"
+                    loading="lazy"
+                  />
+
+                  <span class="mapa-cobertura" aria-hidden="true"></span>
+
+                  <div class="mapa-marcador" aria-label="Punto EcoMarket: Ciudadela Real de Minas">
+                    <span class="mapa-marcador__pulso mapa-marcador__pulso--uno" aria-hidden="true"></span>
+                    <span class="mapa-marcador__pulso mapa-marcador__pulso--dos" aria-hidden="true"></span>
+                    <span class="mapa-marcador__pin">
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                          d="M19 5C11 5 6 10 5 19c9-1 14-6 14-14Z"
+                          stroke="currentColor"
+                          stroke-width="2.2"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M5 19 14 10"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </span>
+                    <span class="mapa-marcador__sombra" aria-hidden="true"></span>
+                  </div>
+                </div>
+
+                <div class="mapa-insignia">
+                  <span class="mapa-insignia__punto" aria-hidden="true"></span>
+                  <span>Bucaramanga · Real de Minas</span>
+                </div>
+
+                <div class="mapa-controles" aria-hidden="true">
+                  <label for="mapa-zoom-inicio" class="mapa-control" title="Acercar / Alejar vista">
+                    <span class="mapa-control__mas">+</span>
+                    <span class="mapa-control__menos">−</span>
+                  </label>
+                </div>
+
+                <div class="mapa-tarjeta">
+                  <div class="mapa-tarjeta__encabezado">
+                    <span class="mapa-tarjeta__estado">● Punto EcoMarket</span>
+                    <span class="mapa-tarjeta__distancia">A 2 min de UTS</span>
+                  </div>
+                  <strong class="mapa-tarjeta__titulo">Sede Principal Bucaramanga</strong>
+                  <p class="mapa-tarjeta__direccion">Av. Búcaros · Ciudadela Real de Minas</p>
+                </div>
               </div>
             </div>
           </div>

@@ -57,6 +57,9 @@
           <div class="navegacion__acciones">
             <a href="productos.html" class="accion-visual">
               <span>Ir al catálogo</span>
+              <svg class="accion-visual__icono accion-visual__icono--flecha" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </a>
           </div>
         </nav>
@@ -184,9 +187,9 @@
                 <span class="eyebrow">Información complementaria</span>
                 <h3>Datos de demostración</h3>
                 <ul class="tarjeta-info__lista">
-                  <li><strong>Correo:</strong> hola@ecomarket.co</li>
-                  <li><strong>Horario de atención:</strong> Lunes a viernes, 9:00 - 17:00 (demostrativo)</li>
-                  <li><strong>Ubicación:</strong> Bogotá, Colombia (demostrativa)</li>
+                  <li><strong>Correo:</strong> camilocespedes@ecomarket.co</li>
+                  <li><strong>Horario de atención:</strong> Lunes a sábado, 9:00 - 18:00 (demostrativo)</li>
+                  <li><strong>Ubicación:</strong> Bucaramanga, Colombia (demostrativa)</li>
                 </ul>
               </article>
               <article class="tarjeta-info scroll-card">
@@ -209,11 +212,72 @@
               </article>
               <article class="tarjeta-info scroll-card">
                 <span class="eyebrow">Ubicación</span>
-                <h3>Mapa ilustrado</h3>
-                <div class="mapa-ilustrado">
-                  <img class="scroll-image" src="../img/hero/mapa.svg" alt="Ilustración estática de un mapa de ubicación" loading="lazy" />
+                <h3>Encuéntranos en Bucaramanga</h3>
+                <div class="mapa-ilustrado" tabindex="0" aria-label="Mapa interactivo simulado de la ubicación de EcoMarket en Bucaramanga">
+                  <input type="checkbox" id="mapa-zoom" class="mapa-zoom-toggle" aria-label="Alternar acercamiento del mapa" />
+
+                  <div class="mapa-ilustrado__lienzo">
+                    <img
+                      class="mapa-ilustrado__img"
+                      src="../img/mapa.png"
+                      alt="Vista satelital del sector Ciudadela Real de Minas en Bucaramanga"
+                      loading="lazy"
+                    />
+
+                    <!-- Radio de cobertura ecológico simulado -->
+                    <span class="mapa-cobertura" aria-hidden="true"></span>
+
+                    <!-- Marcador principal de EcoMarket -->
+                    <div class="mapa-marcador" aria-label="Punto EcoMarket: Ciudadela Real de Minas">
+                      <span class="mapa-marcador__pulso mapa-marcador__pulso--uno" aria-hidden="true"></span>
+                      <span class="mapa-marcador__pulso mapa-marcador__pulso--dos" aria-hidden="true"></span>
+                      <span class="mapa-marcador__pin">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                          <path
+                            d="M19 5C11 5 6 10 5 19c9-1 14-6 14-14Z"
+                            stroke="currentColor"
+                            stroke-width="2.2"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M5 19 14 10"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="mapa-marcador__sombra" aria-hidden="true"></span>
+                    </div>
+                  </div>
+
+                  <!-- Insignia superior de ciudad -->
+                  <div class="mapa-insignia">
+                    <span class="mapa-insignia__punto" aria-hidden="true"></span>
+                    <span>Bucaramanga · Real de Minas</span>
+                  </div>
+
+                  <!-- Controles simulados de zoom (HTML + CSS) -->
+                  <div class="mapa-controles" aria-hidden="true">
+                    <label for="mapa-zoom" class="mapa-control" title="Acercar / Alejar vista">
+                      <span class="mapa-control__mas">+</span>
+                      <span class="mapa-control__menos">−</span>
+                    </label>
+                  </div>
+
+                  <!-- Tarjeta flotante interactiva al pasar el mouse -->
+                  <div class="mapa-tarjeta">
+                    <div class="mapa-tarjeta__encabezado">
+                      <span class="mapa-tarjeta__estado">● Punto EcoMarket</span>
+                      <span class="mapa-tarjeta__distancia">A 2 min de UTS</span>
+                    </div>
+                    <strong class="mapa-tarjeta__titulo">Sede Principal Bucaramanga</strong>
+                    <p class="mapa-tarjeta__direccion">Av. Búcaros · Ciudadela Real de Minas</p>
+                  </div>
                 </div>
-                <p class="nota">Mapa estático e ilustrado. No interactivo.</p>
+                <p class="nota">
+                  Pasa el cursor sobre el mapa para explorar la ubicación o pulsa <strong>+</strong> para hacer zoom (100% HTML y CSS).
+                </p>
               </article>
             </div>
           </div>
